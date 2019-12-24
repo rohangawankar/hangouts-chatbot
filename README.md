@@ -6,6 +6,8 @@ The current project is developed under the concept of 'Gamification' for taking 
 
 Gamification, to simply put, is implementing game principles in non-gaming environment to motivate participation, engagement, and loyalty. Please notice that the bot is not a Machine Learning bot. It is a simple bot mainly used for taking inputs and sending push notifications to the people who added the bot.
 
+We can also send push messages to whoever added the bot. Every response that the user inputs has been saved in a spreadsheet.
+
 # Google Apps Script
 
 The project is written in GAS/JavaScript, can be found in Code.gs. There is a json mannifest file, appsscript.json, associated with Code.js. 
@@ -61,3 +63,6 @@ You should now be taken to the dashboard with the Hangouts Chat API focused.
 1) Open hangouts and search for AutoBot
 2) Add bot to your hangouts
 3) Start texting
+. The bot will reply as per the switch cases mentioned in the Code.gs
+. We can also send push messages to whoever added the bot
+. Every response that the user sends has been saved in a spreadsheet
