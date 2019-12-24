@@ -194,6 +194,7 @@ function getAccessTokenTest() {
  * Authorizes and makes a request to the Hangouts Chat API for :
  * - Getting all spaces the bot is installed
  * - Sending message when space is a Direct Message space
+ * - Run this function from apps script project to send messages to whoever installed the bot
  */
 function sendPushMessage() {
   var service = getChatbotService();
@@ -219,7 +220,7 @@ function sendPushMessage() {
             headers: {
               Authorization: 'Bearer ' + service.getAccessToken()
             },
-            payload : JSON.stringify({ text: "Hello Sourabh ! There has been a new process update." })
+            payload : JSON.stringify({ text: "Hello Sourabh ! There has been a new process update." })//Customizable message that the users receieve
           }
           
           //We send message to the DM room
